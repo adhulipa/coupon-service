@@ -1,6 +1,12 @@
 source 'https://rubygems.org'
 
 gem 'shopify_api'
+gem 'barrister-rails'
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+
+gem 'byebug'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'

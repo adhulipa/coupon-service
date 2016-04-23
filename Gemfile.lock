@@ -20,6 +20,9 @@ GEM
       erubis (~> 2.7.0)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    active_attr (0.9.0)
+      activemodel (>= 3.0.2, < 5.1)
+      activesupport (>= 3.0.2, < 5.1)
     activejob (4.2.6)
       activesupport (= 4.2.6)
       globalid (>= 0.3.0)
@@ -30,6 +33,10 @@ GEM
       activemodel (= 4.2.6)
       activesupport (= 4.2.6)
       arel (~> 6.0)
+    activeresource (4.0.0)
+      activemodel (~> 4.0)
+      activesupport (~> 4.0)
+      rails-observers (~> 0.1.1)
     activesupport (4.2.6)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
@@ -37,8 +44,20 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
+    autoprefixer-rails (6.3.6)
+      execjs
+    barrister (0.1.1)
+      json (>= 1.5.0)
+    barrister-intraprocess (0.3.0)
+      barrister (~> 0)
+    barrister-rails (0.0.2)
+      active_attr (~> 0)
+      barrister (~> 0)
+      barrister-intraprocess (~> 0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-sass (3.2.0.2)
+      sass (~> 3.2)
     builder (3.2.2)
     byebug (8.2.4)
     coffee-rails (4.1.1)
@@ -97,6 +116,8 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+    rails-observers (0.1.2)
+      activemodel (~> 4.0)
     railties (4.2.6)
       actionpack (= 4.2.6)
       activesupport (= 4.2.6)
@@ -115,6 +136,9 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    shopify_api (4.2.0)
+      activeresource
+      rack
     spring (1.7.1)
     sprockets (3.6.0)
       concurrent-ruby (~> 1.0)
@@ -143,6 +167,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
+  barrister-rails
+  bootstrap-sass (~> 3.2.0)
   byebug
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
@@ -150,6 +177,7 @@ DEPENDENCIES
   rails (= 4.2.6)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  shopify_api
   spring
   sqlite3
   turbolinks
