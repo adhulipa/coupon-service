@@ -1,0 +1,16 @@
+interface CouponService {
+	
+	struct CouponProperties {
+	  code          string
+	  type          string
+	  value         float
+	  applied_on    string
+	}
+
+	struct Coupon extends CouponProperties {
+	  id        int
+	}
+
+	create(properties CouponProperties) Coupon
+	get_coupons() []Coupon
+}

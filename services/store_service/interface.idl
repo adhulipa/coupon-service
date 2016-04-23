@@ -1,0 +1,8 @@
+interface StoreService {
+
+    struct StoreProperties {
+	  name     string
+	}
+
+	create_coupon(code string, type string, value float, applied_on string) bool
+}
